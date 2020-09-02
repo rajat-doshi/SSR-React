@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.image-block {
+  border: 1px solid #cdcdcd;
+}
+
+.image-block:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.image-block img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detail {
+  margin-left: 180px;
+}
+
+.price {
+  color: black;
+  font-size: medium;
+}
+
+.editTextbox {
+  border-radius: 20px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
+ 
+  background-color: #61dafb;
+  border: #282c34;
+
+}
+.item-contain{position: relative;}
+.item-contain:hover .action-buttons{display: flex;
+  align-items: center;
+  justify-content: center; }
+.action-buttons{position: absolute; top: 0px; bottom: 0px; left: 0; right: 0px;background-color: rgba(0,0,0,0.8); display: none;z-index: 1;}
+.action-buttons .btn{border-radius: 5px; margin-right: 15px;}
+/* .image-item-block{display: flex; display: -webkit-flex; align-items:flex-start;flex-wrap: wrap; justify-content: space-between;}
+.image-item-block .item-contain{flex:0 0 30%; max-width: 30%;} */
+.form-field-main input,.form-field-main textarea{resize: none; border:1px solid #cfcfcf; padding:0px 10px; width: 100%; height: 32px;background-color: #cdcdcd;}
+.form-field-main textarea{height:150px;}
+.form-field-main .btn{background-color: #7560e2; width:100%;}
