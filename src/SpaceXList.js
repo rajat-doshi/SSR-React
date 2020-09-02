@@ -37,46 +37,50 @@ const SpaceLaunchList = () => {
   };
   return (
     <>
-      <div className="container-fluid">
-        {state.loading && <h4>Featching data...</h4>}
+      <div className="container-fluid spacex-list">
+        
+        <h2>SpaceX Launch Programs</h2>
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-2">
             <Filter state={state} handleChange={handleChange} />
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-10">
             <div className="row">
               {state.launchList.length == 0 && !state.loading && (
                 <h3>No Data Found</h3>
               )}
+              {state.loading && <h4>Featching data...</h4>}
               {state.launchList.map((res) => {
                 return (
-                  <div className="col-lg-3 border">
-                    <div>
+                  <div className="col-lg-3 col-md-6 border">
+                   <div className="block-item">
+                   <div className="image-block-item">
                       {" "}
                       <img src={res.links.mission_patch_small} />{" "}
                     </div>
-                    <div> {res.mission_name} </div>
+                    <div class="block-detail"><div> {res.mission_name} </div>
                     <div>
-                      {" "}
-                      Mission Ids
-                      <ul>
-                        {" "}
-                        {res.mission_id.map((idData) => {
-                          return <li>{idData}</li>;
-                        })}{" "}
-                      </ul>
+                    {" "}
+                    Mission Ids
+                    <ul>
+                    {" "}
+                    {res.mission_id.map((idData) => {
+                    return <li>{idData}</li>;
+                    })}{" "}
+                    </ul>
                     </div>
                     <div>Launch year :{res.launch_year}</div>
                     <div>
-                      Successful Launch :{res.launch_success ? "True" : "False"}
+                    Successful Launch :{res.launch_success ? "True" : "False"}
                     </div>
                     <div>
-                      Successful Landing :
-                      {res.rocket.first_stage.cores.length > 0 &&
-                      res.rocket.first_stage.cores[0].land_success
-                        ? "True"
-                        : "False"}
-                    </div>
+                    Successful Landing :
+                    {res.rocket.first_stage.cores.length > 0 &&
+                    res.rocket.first_stage.cores[0].land_success
+                    ? "True"
+                    : "False"}
+                    </div></div>
+                   </div>
                   </div>
                 );
               })}

@@ -93,3 +93,13 @@
 .form-field-main input,.form-field-main textarea{resize: none; border:1px solid #cfcfcf; padding:0px 10px; width: 100%; height: 32px;background-color: #cdcdcd;}
 .form-field-main textarea{height:150px;}
 .form-field-main .btn{background-color: #7560e2; width:100%;}
+
+
+/**/
+.spacex-list{background-color: #e4e4e4;}
+.spacex-list .block-item{background-color: #fff ;padding: 15px;}
+.spacex-list .block-item button.btn{background-color: #c5e09b; color:#000;width: 100%; margin-bottom: 10px;}
+.spacex-list .block-item button.btn.active{background-color:#7ab927;color:#000;}
+.spacex-list .block-item .title{display: block; text-align: center; padding-bottom: 4px;border-bottom:1px solid #f6f6f6;margin-bottom: 10px;}
+.spacex-list .block-item {margin-bottom:30px;}
+.spacex-list .image-block-item{padding:8px; background-color:#e6e6e6; text-align: center; margin-bottom: 15px;}
