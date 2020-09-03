@@ -5,6 +5,6 @@
 ### 4 npm run dev for SSR 
 ### 5 if there are already build and server-build folder exist
 ### Run sudo rm -r build server-build
-
-### lightShot Url https://prnt.sc/uafyzc
+""
+### lighthouse result Url https://prnt.sc/uarzvw   (light shot url)
 ### Best pratice is 0 because i am using http
